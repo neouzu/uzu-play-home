@@ -160,4 +160,20 @@
   .animate-turn-off {
     animation: turn-off 0.55s cubic-bezier(0.23, 1, 0.32, 1) forwards;
   }
+
+  /* Shimmer Effect */
+  @keyframes shimmer {
+    100% {
+      transform: translateX(100%);
+    }
+  }
+
+  .bg-scanlines {
+    background: linear-gradient(to bottom,
+        rgba(255, 255, 255, 0),
+        rgba(255, 255, 255, 0) 50%,
+        rgba(0, 0, 0, 0.2) 50%,
+        rgba(0, 0, 0, 0.2));
+    background-size: 100% 4px;
+  }
 }
